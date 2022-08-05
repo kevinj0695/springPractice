@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="debug">
+ 
+    <Appenders>
+        <!-- 콘솔 -->
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%-5p: %c - %m%n"/>
+        </Console>
+        
+        <!-- 
+        일단 주석 처리
+        <File name="log2file" fileName="/prac/log2file.log" append="true">
+			<PatternLayout pattern="%-5p: %c - %m%n" />
+		</File>	
+        <AppenderRef ref="log2file"/>
+         -->
+    </Appenders>
+    
+    <loggers>
+        <root level="trace" additivity="true">
+            <AppenderRef ref="console"/>
+        </root>
+    </loggers>
+ 
+</configuration>
